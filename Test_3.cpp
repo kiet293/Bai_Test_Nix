@@ -40,7 +40,8 @@ int main() {
     SinhVien ds[n];
     // input student
     cout << "Nhap thong tin sinh vien:" << endl;
-    cin.ignore(); // Xóa b? ð?m
+    cin.ignore();
+    
     for (int i = 0; i < n; i++) {
         cout << "Sinh vien thu " << i + 1 << ":" << endl;
         cout << "Ten: ";
@@ -88,14 +89,14 @@ int main() {
 
     // display avg >= 8
     cout << "\nDanh sach sinh vien co diem TB >= 8:" << endl;
-    bool coSV = false;
+    bool svGioi = false;
     for (int i = 0; i < n; i++) {
         if (ds[i].diemTB >= 8) {
-            coSV = true;
+            svGioi = true;
             cout << "Ten: " << ds[i].ten << ", Diem TB: " << ds[i].diemTB << endl;
         }
     }
-    if (!coSV) {
+    if (!svGioi) {
         cout << "Khong co sinh vien nao co diem TB >= 8" << endl;
     }
 

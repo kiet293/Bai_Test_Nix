@@ -30,7 +30,7 @@ int main() {
             cin.ignore(10000, '\n');
         }
     }
-	
+	// su dung set
     set<int> distinctValues;
     for (int i = 0; i < n; i++) {
         distinctValues.insert(arr[i]);
