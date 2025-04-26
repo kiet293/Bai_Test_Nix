@@ -83,7 +83,7 @@ int main() {
         } while (true);
 
         tinhDiemTB(ds[i]);
-        cin.ignore(); // Xóa b? ð?m cho l?n nh?p ti?p theo
+        cin.ignore();
     }
 
     // display avg >= 8

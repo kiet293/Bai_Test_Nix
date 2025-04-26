@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     int n;
-    bool validInput = false;
-
+    bool check = false;
+	// check input
     while (!check) {
         cout << "Nhap so luong phan tu n: ";
         if (cin >> n) {
@@ -20,7 +20,7 @@ int main() {
             cin.ignore(10000, '\n');
         }
     }
-
+	// input arr
     int arr[n];
     cout << "Nhap " << n << " so nguyen: ";
     for (int i = 0; i < n; i++) {
@@ -30,7 +30,7 @@ int main() {
             cin.ignore(10000, '\n');
         }
     }
-
+	
     set<int> distinctValues;
     for (int i = 0; i < n; i++) {
         distinctValues.insert(arr[i]);
